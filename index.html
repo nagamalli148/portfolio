@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malli - UX Designer</title>
+<meta name="description" content="Portfolio of Naga Malli (Malli) Chennamsetti, UX Designer transitioning from software engineering.">
+
+<!-- Fonts: Fraunces for headings (warm, characterful serif), Inter for body, IBM Plex Mono for labels/data -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="#top" class="nav__logo">Malli<span>.</span></a>
+  <nav class="nav__links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#leadership">Community</a>
+    <a href="#experience">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="assets/NagaMalli.pdf" class="btn btn--ghost nav__resume" download>Resume</a>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__portrait-wrap">
+      <img class="hero__portrait" src="assets/myphoto.jpg" alt="Naga Malleswari smiling at a community event">
+      <span class="hero__portrait-note">curious by nature</span>
+      <div class="butterfly-flight" aria-hidden="true">
+        <svg class="mini-butterfly" viewBox="0 0 64 58" role="presentation">
+          <path class="mini-butterfly__antenna" d="M42 22C48 12 55 8 62 10M43 24C52 18 59 18 63 21" />
+          <path class="mini-butterfly__upper-wing" d="M39 26C32 12 20 2 6 3C2 4 4 15 9 25C14 35 23 35 39 31Z" />
+          <path class="mini-butterfly__lower-wing" d="M39 31C25 27 13 32 13 43C13 52 19 57 25 55C32 53 36 42 41 32Z" />
+          <path class="mini-butterfly__wing-detail" d="M34 28C25 22 17 15 8 10M34 33C27 37 23 43 21 50" />
+          <path class="mini-butterfly__body" d="M40 23C43 24 45 27 44 31C43 37 39 42 36 45C38 38 39 32 38 27Z" />
+          <circle class="mini-butterfly__head" cx="42" cy="23" r="3.5" />
+        </svg>
+      </div>
+    </div>
+    <div class="hero__copy">
+      <p class="hero__name">NagaMalli</p>
+      <p class="eyebrow">UX Designer</p>
+      <h1 class="hero__title">I turn real needs<br>into <em>clear</em> experiences.</h1>
+      <p class="hero__sub">
+        After five years building healthcare, fintech, and education software, I now
+        bring an engineer's eye and a designer's care to the digital products people use every day.
+      </p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary">See the work</a>
+        <a href="assets/NagaMalli.pdf" class="btn btn--ghost" download>Download Resume</a>
+      </div>
+      <ul class="hero__tags">
+        <li>UX Research</li><li>UI Design</li><li>Storytelling</li>
+        <li>Design Thinking</li><li>Wireframing</li><li>Prototyping</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- signature divider: a hand-drawn thread connecting "code" to "design" -->
+  <svg class="thread" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 C 200,10 300,50 500,30 S 800,5 1000,35 S 1150,45 1200,25" />
+  </svg>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section id="work" class="section">
+    <p class="eyebrow">Selected work</p>
+    <h2 class="section__title">Designing for the feeling underneath the problem</h2>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project__visual project__visual--paynora">
+          <img class="project__image" src="assets/Paynora.png" alt="PayNora payments app interface displayed on a smartphone" loading="lazy" decoding="async">
+        </div>
+        <div class="project__body">
+          <p class="mono">Fintech · UX Research + Product Design</p>
+          <h3>PayNora</h3>
+          <p>
+            A payments app built for senior and cautious users - the people
+            most likely to fear a wrong tap. Guided flows, voice-assisted
+            confirmation, and a risk-free practice mode let them build real
+            confidence before real money moves.
+          </p>
+          <ul class="project__points">
+            <li>Addressed fraud anxiety and fear of mistakes head-on</li>
+            <li>Simplified navigation for low digital-confidence users</li>
+            <li>Practice-based learning before live transactions</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project project--reverse">
+        <div class="project__visual project__visual--headroom">
+          <img class="project__image" src="assets/headroom.png" alt="Headroom study companion app interface displayed on smartphones" loading="lazy" decoding="async">
+        </div>
+        <div class="project__body">
+          <p class="mono">EdTech · UX Research + Visual Design</p>
+          <h3>Headroom</h3>
+          <p>
+            A study companion for students preparing for competitive exams -
+            designed around burnout, not around streaks. Soft colour, rounded
+            components, and gentle feedback keep the pressure down while the
+            momentum stays up.
+          </p>
+          <ul class="project__points">
+            <li>Designed for emotional pressure, not just productivity</li>
+            <li>A calm visual system: soft colour, rounded forms, clear hierarchy</li>
+            <li>Gentle feedback loops that support recovery, not guilt</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section--about">
+    <div class="about">
+      <div class="about__text">
+        <p class="eyebrow">Design practice</p>
+        <h2 class="section__title">Research first. Make it feel human.</h2>
+        <p>
+          I move between conversations, sketches, flows, and prototypes to find
+          the clearest expression of a real need. My work spans healthcare,
+          fintech, education, branding, and digital experiences, with care for
+          the people who have to live with the outcome.
+        </p>
+        <p class="about__aside">From the first question to the final detail, I design for understanding.</p>
+      </div>
+      <div class="about__visual about__visual--collage" aria-label="A glimpse into Malli's design process">
+        <figure class="about__tile about__tile--sketch">
+          <img src="assets/paper_sketch.png" alt="Hand-drawn interface sketches on paper" loading="lazy" decoding="async">
+          <figcaption>start with a sketch</figcaption>
+        </figure>
+        <figure class="about__tile about__tile--laptop">
+          <img src="assets/imagelaptop.png" alt="Design work being created on a laptop" loading="lazy" decoding="async">
+          <figcaption>design, in context</figcaption>
+        </figure>
+        <figure class="about__tile about__tile--people">
+          <img src="assets/replica.jpg" alt="A creative moment shared with collaborators" loading="lazy" decoding="async">
+          <figcaption>make it matter</figcaption>
+        </figure>
+      </div>
+      <div class="about__facts">
+        <div class="fact">
+          <p class="fact__num">30+</p>
+          <p class="fact__label">student teams mentored <br>on story telling, wireframing</p>
+        </div>
+        <div class="fact">
+          <p class="fact__num">3</p>
+          <p class="fact__label">design and innovation hackathons</p>
+        </div>
+        <div class="fact">
+          <p class="fact__num">1</p>
+          <p class="fact__label">Creative Finisher Award</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS & TOOLS ============ -->
+  <section id="skills" class="section">
+    <p class="eyebrow">Design toolkit</p>
+    <h2 class="section__title">The ways I turn questions into experiences</h2>
+
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Understand</h3>
+        <ul class="chips">
+          <li>UX Research</li><li>User Interviews</li><li>Design Thinking</li>
+          <li>Problem Framing</li><li>User Research</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Shape</h3>
+        <ul class="chips">
+          <li>Information Architecture</li><li>Wireframing</li><li>User Flows</li>
+          <li>Prototyping</li><li>Visual Design</li><li>Branding</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Make</h3>
+        <ul class="chips">
+          <li>Figma</li><li>Miro</li><li>Inkscape</li><li>Canva</li>
+          <li>Excalidraw</li><li>Jira</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP & COMMUNITY ============ -->
+  <section id="leadership" class="section section--leadership">
+    <div class="leadership__intro">
+      <p class="eyebrow">Beyond the screen</p>
+      <h2 class="section__title">Design grows in community.</h2>
+      <p>Making, mentoring, and organising have shaped how I listen, collaborate, and bring people into the process.</p>
+      <a class="leadership__link" href="https://nagamalli.crevado.com/for-clients" target="_blank" rel="noopener">See my design work <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="leadership__list">
+      <article class="leadership__item">
+        <p class="mono">2017 - Present</p>
+        <h3>SwechaAP</h3>
+        <p>Mentored 30+ student teams through technical camps and community initiatives. Community Organizer and Graphic Designer.</p>
+      </article>
+      <article class="leadership__item">
+        <p class="mono">2025 - Present</p>
+        <h3>Global Shapers</h3>
+        <p>Design Lead, creating organizational communication materials and collaborating with developers on the GSC website.</p>
+      </article>
+      <article class="leadership__item">
+        <p class="mono">2025 - Present</p>
+        <h3>Design For Change</h3>
+        <p>Participated in three design and innovation hackathons and received a Creative Finisher Award.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <p class="eyebrow">The journey</p>
+    <h2 class="section__title">A design practice grounded in how things get made</h2>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <p class="mono">2018 - Present</p>
+          <h3>Independent Designer</h3>
+          <p class="timeline__role">UX Research, Visual Design &amp; Digital Experiences</p>
+          <p>
+            Created branding, visual communication, campaign, and promotional
+            designs for community, business, education, and digital initiatives.
+          </p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <p class="mono">Mar 2021 - Jun 2024</p>
+          <h3>Software development, Cognizant</h3>
+          <p class="timeline__role">Enterprise Financial Invoice Automation</p>
+          <p>
+            Built enterprise automation and reporting solutions, developing the
+            systems thinking and collaboration habits that now support my design work.
+          </p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <p class="mono">Mar 2024 - Present</p>
+          <h3>Product interfaces, Monad Health</h3>
+          <p class="timeline__role">Elumina - EHR &amp; Home Healthcare Platform</p>
+          <p>
+            Supporting the design of an EHR and home healthcare platform,
+            refining Referrals, Orders, Scheduling, and Billing Denials workflows
+            through research with clinicians, nurses, and non-technical users.
+          </p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="education">
+      <div class="education__details">
+        <p class="eyebrow">Education</p>
+        <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
+        <p>KL University · 2017 - 2021</p>
+      </div>
+      <div class="education__score">
+        <span>CGPA</span>
+        <strong>9.16</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <footer id="contact" class="footer">
+    <div class="footer__heading">
+      <p class="eyebrow">A quiet open channel</p>
+      <h2 class="footer__title">Bring me the question<br><em>behind</em> the brief.</h2>
+      <p class="footer__sub">Open to remote, onsite roles and thoughtful collaborations.</p>
+    </div>
+    <div class="footer__conversation">
+      <p class="mono">What would you like to explore?</p>
+      <div class="footer__links">
+        <button class="footer__link footer__link--email" type="button" data-contact="Y2gubmFnYW1hbGxpMTQ4QGdtYWlsLmNvbQ==" aria-expanded="false">
+          <span class="footer__link-mark" aria-hidden="true">01</span>
+          <span><strong>A product worth making</strong><small>Start a private email</small></span>
+          <span class="footer__arrow" aria-hidden="true">↗</span>
+        </button>
+        <a class="footer__link" href="https://www.linkedin.com/in/nagamalleswarichennamsetti/" target="_blank" rel="noopener">
+          <span class="footer__link-mark" aria-hidden="true">02</span>
+          <span><strong>A thoughtful collaboration</strong><small>Find me on LinkedIn</small></span>
+          <span class="footer__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="footer__actions">
+        <a href="assets/NagaMalli.pdf" class="btn btn--primary footer__resume" download>Download Resume</a>
+      </div>
+    </div>
+    <p class="footer__note">© 2026 Naga Malleswari Chennamsetti <span aria-hidden="true">·</span> made with curiosity</p>
+  </footer>
+
+</main>
+<a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
+<script>
+  const backToTop = document.querySelector('.back-to-top');
+  const updateBackToTop = () => {
+    backToTop.classList.toggle('is-visible', window.scrollY > 500);
+  };
+
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  updateBackToTop();
+
+  const emailLink = document.querySelector('.footer__link--email');
+  emailLink.addEventListener('click', () => {
+    const address = atob(emailLink.dataset.contact);
+    if (emailLink.getAttribute('aria-expanded') === 'false') {
+      emailLink.setAttribute('aria-expanded', 'true');
+      emailLink.querySelector('strong').textContent = address;
+      emailLink.querySelector('small').textContent = 'Email address revealed';
+      emailLink.classList.add('is-revealed');
+    }
+  });
+</script>
+</body>
+</html>
