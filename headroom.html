@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Headroom Case Study - Malli</title>
+<meta name="description" content="How research, a study-first concept, and the Glass Sanctuary design system shaped Headroom, a support layer for competitive-exam students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
+<link rel="stylesheet" href="headroom.css">
+</head>
+<body class="case-study case-study--headroom">
+<header class="nav case-nav">
+  <a href="index.html#top" class="nav__logo">Malli<span>.</span></a>
+  <a class="case-nav__back" href="index.html#work">← Back to selected work</a>
+</header>
+
+<main>
+  <section class="case-hero headroom-hero">
+    <div class="case-hero__copy">
+      <p class="eyebrow">EdTech · Research + Product Design</p>
+      <h1>Headroom</h1>
+      <p class="headroom-hero__statement">A study companion with an emotional-support layer, designed for competitive-exam aspirants aged 15–19.</p>
+      <p class="case-hero__intro">The product looks and feels like a study planner. Support is built into familiar study moments—so students can find room to reset without being asked to label themselves.</p>
+      <a class="btn btn--primary" href="#research">Explore the case study <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure class="case-hero__image case-hero__image--headroom headroom-hero__image">
+      <img src="assets/headroom.png" alt="Headroom study companion app shown on two smartphones" fetchpriority="high">
+      <figcaption>Study planning and supportive prompts in one experience</figcaption>
+    </figure>
+  </section>
+
+  <section class="case-overview headroom-overview" aria-label="Project overview">
+    <div><p class="mono">My role</p><p>Captain &amp; Lead UX</p></div>
+    <div><p class="mono">Team</p><p>Signal Syndicate · 10 people</p></div>
+    <div><p class="mono">Timeline</p><p>8 weeks · June 2026</p></div>
+    <div><p class="mono">Deliverables</p><p>Research, system, prototype, testing</p></div>
+  </section>
+
+  <section class="case-section headroom-section" id="research">
+    <div class="case-section__heading">
+      <p class="eyebrow">01 · Research</p>
+      <h2>Understand the pressure before designing the support.</h2>
+    </div>
+    <div class="case-section__body">
+      <p>We began broadly, then narrowed the focus as fieldwork surfaced a distinct need among younger exam aspirants. Primary conversations with students and parents—across home visits, cafés, and video calls—were paired with secondary research and a review of existing study and support products.</p>
+      <figure class="headroom-research-board">
+        <a href="assets/headroom/research_headroom.jpeg" target="_blank" rel="noopener" aria-label="Open the full-size Headroom primary and competitive research board">
+          <img src="assets/headroom/research_headroom.jpeg" alt="Headroom research board showing primary research synthesis and a competitive research matrix" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <span>Primary research synthesis and competitive research board</span>
+          <a href="assets/headroom/research_headroom.jpeg" target="_blank" rel="noopener">View full-size board <span aria-hidden="true">↗</span></a>
+        </figcaption>
+      </figure>
+      <div class="headroom-research-grid">
+        <article class="headroom-research-card">
+          <p class="mono">Primary research</p>
+          <strong>27 touchpoints</strong>
+          <p>Student and parent conversations helped ground the work in daily routines, pressure, and existing coping strategies.</p>
+        </article>
+        <article class="headroom-research-card">
+          <p class="mono">Secondary + competitive research</p>
+          <strong>7 research dimensions</strong>
+          <p>We reviewed published research and products including Wysa, Amaha, Headspace, Tele-MANAS, Woebot, Mitsu, Youper, Allen/Aakash, and YouTube.</p>
+        </article>
+      </div>
+
+      <div class="headroom-insights">
+        <p class="mono">Patterns that shaped the direction</p>
+        <ul>
+          <li><strong>Pressure peaks alone.</strong> Difficult moments often came late at night, after study and score comparisons.</li>
+          <li><strong>Comparison happens quickly.</strong> Shared mock-test scores can leave little room to process a result.</li>
+          <li><strong>Missed days compound.</strong> Backlogs can make it harder to return to a rigid study plan.</li>
+          <li><strong>Labels matter.</strong> Students were more open to study tools than products framed as mental-health or wellness apps.</li>
+        </ul>
+      </div>
+
+      <a class="headroom-text-link" href="https://www.figma.com/board/ZTZ3QDs0jjNj9oM6H3CSIi/Hackathon-8.0_Team-4?node-id=0-1&amp;t=BGnzFMFSDFkmw7IO-1" target="_blank" rel="noopener">Open the FigJam working board <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="case-section case-section--tinted headroom-section">
+    <div class="case-section__heading">
+      <p class="eyebrow">02 · Synthesis &amp; ideation</p>
+      <h2>Make support part of the study experience.</h2>
+    </div>
+    <div class="case-section__body">
+      <div class="headroom-persona">
+        <div>
+          <p class="mono">Research-led persona</p>
+          <h3>A 17-year-old NEET aspirant</h3>
+          <p>A composite persona shaped from recurring research patterns: disciplined, under pressure, and more comfortable with private, non-judgmental support than generic pep talks.</p>
+        </div>
+        <div class="headroom-persona__need">
+          <p class="mono">Design need</p>
+          <p>Make it easier to recover after a difficult moment and return to studying without guilt.</p>
+        </div>
+      </div>
+
+      <div class="headroom-journey">
+        <p class="mono">The emotional journey we designed around</p>
+        <ol>
+          <li>Pressure builds</li>
+          <li>Emotional trigger</li>
+          <li>Existing support fails</li>
+          <li>Soft reset</li>
+          <li>Recovery</li>
+        </ol>
+      </div>
+
+      <div class="headroom-ideation">
+        <div>
+          <p class="mono">Team ideation</p>
+          <strong>28 ideas · 6 themes</strong>
+        </div>
+        <p>How-Might-We prompts opened up options; synthesis, impact-versus-effort prioritisation, and MoSCoW selection helped the team choose a study planner and companion with support embedded in everyday flows.</p>
+      </div>
+
+      <div class="headroom-product-model">
+        <div><span>Visible</span><strong>Planner · Study mode · Tracker</strong></div>
+        <div><span>Embedded</span><strong>Ask AI · Buddy · Vent · Burnout Reset</strong></div>
+        <div><span>Safety</span><strong>Emergency support always free</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section headroom-section">
+    <div class="case-section__heading">
+      <p class="eyebrow">03 · Visual direction</p>
+      <h2>Glass Sanctuary: calm, clear, and non-clinical.</h2>
+    </div>
+    <div class="case-section__body">
+      <p>The visual system pairs frosted surfaces and soft gradients with generous spacing, rounded components, and a restrained coral action colour. The intention was to feel supportive without becoming childish, clinical, or visually demanding.</p>
+      <div class="headroom-brand-notes">
+        <div class="headroom-palette" aria-label="Headroom brand palette">
+          <div><span style="--swatch:#FF8870"></span><strong>Coral</strong><code>#FF8870</code></div>
+          <div><span style="--swatch:#2A1F3A"></span><strong>Aubergine</strong><code>#2A1F3A</code></div>
+          <div><span style="--swatch:#F8D8CB"></span><strong>Peach</strong><code>#F8D8CB</code></div>
+          <div><span style="--swatch:#E8E3F2"></span><strong>Lavender</strong><code>#E8E3F2</code></div>
+        </div>
+        <p><span class="mono">Product type</span><br>Nohemi for display · Satoshi for utility</p>
+        <p><span class="mono">Brand mark</span><br>The Floating Dot: an arch for pressure, with the student’s mind held above it.</p>
+      </div>
+
+      <div class="headroom-visual-gallery">
+        <figure>
+          <a href="assets/headroom/colour-system.jpg" target="_blank" rel="noopener">
+            <img src="assets/headroom/colour-system.jpg" alt="Exported page from the Headroom case-study document showing coral and aubergine colour tokens and semantic states" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Colour system and semantic states · Open image</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/headroom/components.jpg" target="_blank" rel="noopener">
+            <img src="assets/headroom/components.jpg" alt="Exported Headroom component library showing buttons, cards, navigation, inputs, chips, and progress elements" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Component library · Open image</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section case-section--tinted headroom-section">
+    <div class="case-section__heading">
+      <p class="eyebrow">04 · Prototype &amp; test</p>
+      <h2>Move from screen flows to real interactions.</h2>
+    </div>
+    <div class="case-section__body">
+      <p>Five flows moved from low-fidelity wireframes into mid- and high-fidelity screens. A Figma prototype carried the product journey; a working HTML prototype let the team test real Ask AI and Buddy conversations. Seven prompt iterations helped bring those experiences closer to their intended voices.</p>
+      <figure class="headroom-flow-figure">
+        <img src="assets/prototye_headroom.jpeg" alt="Headroom prototype flow map showing connected screens and the progression from early flows to a working implementation" loading="lazy" decoding="async">
+        <figcaption>Prototype flow overview · the full interactive flow is available in Figma</figcaption>
+      </figure>
+      <div class="headroom-prototype-links" aria-label="Headroom prototype resources">
+        <a href="https://www.figma.com/design/vzzPcsVOsXL9cizrpbvGos/Hackathon-8.0_Team-4?node-id=1477-1852&amp;t=dGemKbAnZOFQwzLJ-1" target="_blank" rel="noopener">Figma design file <span aria-hidden="true">↗</span></a>
+        <a href="https://www.figma.com/proto/vzzPcsVOsXL9cizrpbvGos/Hackathon-8.0_Team-4?node-id=1477-1882&amp;t=7hRkTXKRhT9iDPKT-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=1477%3A1852&amp;starting-point-node-id=1477%3A1882" target="_blank" rel="noopener">Interactive prototype <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="headroom-test-results">
+        <div class="headroom-test-results__intro">
+          <p class="mono">Maze usability study · 6 tasks</p>
+          <p><strong>10 participants</strong> completed the full task set; the report also records 5–6 mid-test drop-offs.</p>
+        </div>
+        <div class="headroom-result-grid">
+          <article><strong>94%</strong><span>Onboarding + Home task completion</span></article>
+          <article><strong>31.6%</strong><span>Onboarding misclick rate</span></article>
+          <article><strong>89%</strong><span>Ask AI task completion</span></article>
+          <article><strong>100%</strong><span>Burnout Reset task completion</span></article>
+        </div>
+        <p class="headroom-result-note">These are task-level usability results, not evidence of long-term learning or wellbeing outcomes. The onboarding task also received an ease rating of 3.5/5.</p>
+      </div>
+
+      <div class="headroom-iterations">
+        <p class="mono">Changes made after testing</p>
+        <ul>
+          <li>Added subject confirmation before a study session begins.</li>
+          <li>Introduced a first-use label for the Ask AI floating button.</li>
+          <li>Reduced the home-screen tour from eight cards to five.</li>
+          <li>Adjusted exam-type mapping so JEE profiles do not default to Biology.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section headroom-section headroom-reflection">
+    <div class="case-section__heading">
+      <p class="eyebrow">05 · Reflection</p>
+      <h2>Keep testing the moments that matter most.</h2>
+    </div>
+    <div class="case-section__body">
+      <p>The early study supported the emotional framing and surfaced concrete navigation changes. It also exposed a limit: some participants dropped out during the six-task test. Next, I would shorten or split the sessions and validate the Buddy conversation, Vent in a late-night context, and longer-term Tracker patterns.</p>
+      <p class="headroom-reflection__note">As Captain and Lead UX, one learning was to trust team ownership sooner rather than personally reviewing every artifact.</p>
+    </div>
+  </section>
+
+  <section class="headroom-board-cta">
+    <p class="eyebrow">Explore the source work</p>
+    <h2>See the research, design system, and prototype boards.</h2>
+    <div class="headroom-prototype-links">
+      <a href="https://www.figma.com/board/ZTZ3QDs0jjNj9oM6H3CSIi/Hackathon-8.0_Team-4?node-id=0-1&amp;t=BGnzFMFSDFkmw7IO-1" target="_blank" rel="noopener">FigJam working board <span aria-hidden="true">↗</span></a>
+      <a href="https://www.figma.com/design/vzzPcsVOsXL9cizrpbvGos/Hackathon-8.0_Team-4?node-id=1477-1852&amp;t=dGemKbAnZOFQwzLJ-1" target="_blank" rel="noopener">Figma design file <span aria-hidden="true">↗</span></a>
+      <a href="https://www.figma.com/proto/vzzPcsVOsXL9cizrpbvGos/Hackathon-8.0_Team-4?node-id=1477-1882&amp;t=7hRkTXKRhT9iDPKT-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=1477%3A1852&amp;starting-point-node-id=1477%3A1882" target="_blank" rel="noopener">Interactive prototype <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <nav class="case-next" aria-label="More case studies">
+    <a href="paynora.html">← Previous: PayNora</a>
+    <a href="index.html#work">All selected work <span aria-hidden="true">→</span></a>
+  </nav>
+</main>
+</body>
+</html>
