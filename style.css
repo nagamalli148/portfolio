@@ -1,14 +1,14 @@
 /* ==========================================================
-   TOKENS — change these to re-theme the whole site
+   TOKENS - change these to re-theme the whole site
    ========================================================== */
 :root {
   --bg:        #F5F4EF;   /* warm paper background */
   --bg-alt:    #ECEAE1;   /* slightly deeper panel background */
   --ink:       #1C2027;   /* near-black text */
   --muted:     #5C6470;   /* secondary text */
-  --violet:    #5B3A8E;   /* primary accent — from Headroom's calm palette */
+  --violet:    #5B3A8E;   /* primary accent - from Headroom's calm palette */
   --violet-soft: #ECE5F6;
-  --coral:     #E4573F;   /* secondary accent — from PayNora's warmth */
+  --coral:     #E4573F;   /* secondary accent - from PayNora's warmth */
   --coral-soft: #FBE7E1;
   --line:      #DDDACF;   /* hairline borders */
   --white:     #FFFFFF;

@@ -175,15 +175,11 @@
   box-shadow: 0 16px 40px rgba(42, 31, 58, 0.08);
 }
 
-.headroom-research-board > a {
-  display: block;
-  background: #F7F7F7;
-}
-
 .headroom-research-board img {
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 0.35s ease;
 }
 
 .headroom-research-board figcaption {
@@ -196,23 +192,9 @@
   font-size: 0.78rem;
 }
 
-.headroom-research-board figcaption a {
-  flex: 0 0 auto;
-  color: #5B4772;
-  font-family: var(--font-mono);
+.headroom-image-hint {
+  color: #756B80;
   font-size: 0.68rem;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.headroom-research-board figcaption a:hover {
-  color: #B74336;
-}
-
-.headroom-research-board > a:focus-visible,
-.headroom-research-board figcaption a:focus-visible {
-  outline: 2px solid #5B4772;
-  outline-offset: -3px;
 }
 
 .headroom-insights {
@@ -452,8 +434,7 @@
   margin: 0;
 }
 
-.headroom-visual-gallery a {
-  display: block;
+.headroom-visual-gallery figure {
   overflow: hidden;
   border: 1px solid #E5E0EC;
   border-radius: 14px;
@@ -466,6 +447,7 @@
   height: 360px;
   object-fit: contain;
   object-position: center;
+  transition: transform 0.35s ease;
 }
 
 .headroom-visual-gallery figcaption,
@@ -524,11 +506,6 @@
 
 .headroom-prototype-links a:focus-visible,
 .headroom-text-link:focus-visible,
-.headroom-visual-gallery a:focus-visible {
-  outline: 2px solid #5B4772;
-  outline-offset: 3px;
-}
-
 .headroom-test-results {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -703,6 +680,18 @@
   .headroom-board-cta {
     margin-right: 1rem;
     margin-left: 1rem;
+  }
+}
+
+.headroom-research-board:hover img,
+.headroom-visual-gallery figure:hover img {
+  transform: scale(1.035);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headroom-research-board img,
+  .headroom-visual-gallery img {
+    transition: none;
   }
 }
 
