@@ -208,6 +208,118 @@
   color: var(--case-accent);
 }
 
+.case-document {
+  margin-top: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 14px 36px rgba(34, 60, 120, 0.08);
+}
+
+.case-document:not([open]) > .case-document__content {
+  display: none;
+}
+
+.case-document__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  color: var(--ink);
+  list-style: none;
+  cursor: pointer;
+  transition: background-color 0.18s ease;
+}
+
+.case-document__summary::-webkit-details-marker {
+  display: none;
+}
+
+.case-document__summary:hover,
+.case-document__summary:active {
+  background: var(--case-accent-soft);
+}
+
+.case-document__summary:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--case-accent);
+  outline-offset: -4px;
+}
+
+.case-document__title {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.case-document__summary .mono {
+  margin: 0;
+  color: var(--case-accent);
+  font-size: 0.65rem;
+}
+
+.case-document__name {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.case-document__hint {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.case-document__toggle {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--case-accent);
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.case-document[open] .case-document__summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.case-document[open] .case-document__toggle {
+  transform: rotate(45deg);
+  background: var(--case-accent-soft);
+}
+
+.case-document__content {
+  padding: 0.75rem;
+}
+
+.case-document__viewer {
+  display: block;
+  width: 100%;
+  height: clamp(520px, 78vh, 880px);
+  border: 0;
+  background: #F3F4F6;
+}
+
+.case-document__fallback {
+  margin: 0;
+  padding: 0.8rem 0.5rem 0.2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+}
+
+.case-document__fallback a {
+  color: var(--case-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .case-next {
   display: flex;
   align-items: center;
@@ -276,6 +388,19 @@
   .case-section--tinted {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .case-document__summary {
+    padding: 0.9rem 1rem;
+  }
+
+  .case-document__viewer {
+    height: 65vh;
+    min-height: 400px;
+  }
+
+  .case-document__content {
+    padding: 0.4rem;
   }
 
   .case-next {

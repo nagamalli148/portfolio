@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PayNora Case Study - Malli</title>
-<meta name="description" content="A detailed look at PayNora, a confidence-first payments app concept for senior and cautious users.">
+<meta name="description" content="How research and inclusive design shaped PayNora, a practice-first payments app concept for older adults.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="case-study.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/case-study.css">
+<link rel="stylesheet" href="styles/paynora.css">
 </head>
 <body class="case-study case-study--paynora">
 <header class="nav case-nav">
@@ -17,94 +18,256 @@
 </header>
 
 <main>
-  <section class="case-hero">
+  <section class="case-hero paynora-hero">
     <div class="case-hero__copy">
-      <p class="eyebrow">Fintech · UX Research + Product Design</p>
-      <h1>PayNora: making every payment feel more certain.</h1>
-      <p class="case-hero__intro">A payments app concept for senior and cautious users who want to manage money digitally without worrying that one wrong tap could cost them.</p>
-      <a class="btn btn--primary" href="#challenge">Explore the case study <span aria-hidden="true">↓</span></a>
+      <p class="eyebrow">Fintech · Research + Product Design</p>
+      <h1>PayNora</h1>
+      <p class="paynora-hero__statement">Learn the payment. Trust the next step.</p>
+      <p class="case-hero__intro">A mobile payment app concept for older adults, designed to make everyday transactions easier to understand, practise, and complete independently.</p>
+      <a class="btn btn--primary" href="#research">Explore the case study <span aria-hidden="true">↓</span></a>
     </div>
-    <figure class="case-hero__image case-hero__image--paynora">
-      <img src="assets/Paynora.png" alt="PayNora payment app interface shown on a smartphone" fetchpriority="high">
+    <figure class="case-hero__image case-hero__image--paynora paynora-hero__image">
+      <img src="assets/images/paynora/paynora.png" alt="PayNora mobile app concept showing a clear home screen and an option to practise payments" fetchpriority="high">
+      <figcaption>Practice Mode is visible before a user starts a real payment.</figcaption>
     </figure>
   </section>
 
-  <section class="case-overview" aria-label="Project overview">
-    <div><p class="mono">Focus</p><p>Trust and payment confidence</p></div>
-    <div><p class="mono">Audience</p><p>Senior and cautious users</p></div>
-    <div><p class="mono">Product</p><p>Mobile payments app concept</p></div>
-    <div><p class="mono">Design focus</p><p>Guided flows, confirmation, practice</p></div>
+  <section class="case-overview paynora-overview" aria-label="Project overview">
+    <div><p class="mono">Audience</p><p>Older adults building confidence with digital payments</p></div>
+    <div><p class="mono">Challenge</p><p>Fear of mistakes, fraud, and unclear steps</p></div>
+    <div><p class="mono">Concept</p><p>A guided mobile payments experience</p></div>
+    <div><p class="mono">Design anchors</p><p>Senior Mode · Practice · Caregiver control</p></div>
   </section>
 
-  <section class="case-section" id="challenge">
+  <section class="case-section paynora-section" id="research">
     <div class="case-section__heading">
-      <p class="eyebrow">01 · The challenge</p>
-      <h2>Make the cost of uncertainty feel smaller.</h2>
+      <p class="eyebrow">01 · Research</p>
+      <h2>Understand the trust gap before designing the payment.</h2>
     </div>
     <div class="case-section__body">
-      <p>For someone already worried about fraud or making a mistake, a busy payment screen can make a simple transfer feel high stakes. Dense choices and unclear next steps add friction at exactly the moment the user needs reassurance.</p>
-      <p>PayNora focuses on that emotional barrier as much as the transaction itself: help people understand what they are doing, check it before money moves, and build familiarity without putting real funds at risk.</p>
-      <div class="case-callout">
-        <p class="mono">Design question</p>
-        <p>How might a payment experience make the next step-and the consequences of that step-clear before a user commits?</p>
+      <p>We paired secondary research with six one-to-one interviews with adults aged 55–72, and observed real payments at home and at a shop counter. People were not just worried about unfamiliar technology; they feared making a mistake that would be hard to undo. Clear choices, reassurance, and the freedom to act independently mattered more than speed.</p>
+
+      <figure class="paynora-research-board">
+        <img src="assets/images/paynora/research-board.jpeg" alt="PayNora FigJam research board with primary interviews, secondary research, and synthesis notes" loading="lazy" decoding="async">
+        <figcaption>
+          <span>Primary interviews and research synthesis from the PayNora FigJam board</span>
+          <span class="paynora-image-hint">Hover to inspect</span>
+        </figcaption>
+      </figure>
+
+      <div class="paynora-insights">
+        <p class="mono">What we heard and noticed</p>
+        <ul>
+          <li><button class="paynora-insight-note" type="button" data-sticky-note aria-pressed="false"><strong>One wrong step feels costly</strong><span>Fraud concerns and uncertainty make people cautious about sending money.</span></button></li>
+          <li><button class="paynora-insight-note" type="button" data-sticky-note aria-pressed="false"><strong>Too many choices make tasks harder</strong><span>Unfamiliar labels and navigation can interrupt an otherwise simple payment.</span></button></li>
+          <li><button class="paynora-insight-note" type="button" data-sticky-note aria-pressed="false"><strong>Help can become dependence</strong><span>Family support is reassuring, but users still want to complete familiar tasks on their own.</span></button></li>
+        </ul>
+      </div>
+
+      <div class="paynora-question">
+        <p class="mono">The question we worked around</p>
+        <p>How might we make high-risk digital decisions feel safe and reversible, so seniors can act independently with confidence?</p>
+      </div>
+
+      <a class="paynora-text-link" href="https://www.figma.com/board/XGbj3h1HjS7xycSHDnjA8f/Mars?node-id=0-1&amp;t=h24ShCx1prnRynMw-1" target="_blank" rel="noopener">Open the PayNora FigJam board <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="case-section case-section--tinted paynora-section paynora-synthesis">
+    <div class="case-section__heading">
+      <p class="eyebrow">02 · Synthesis &amp; ideation</p>
+      <h2>Make room for independence, with support when it matters.</h2>
+    </div>
+    <div class="case-section__body">
+      <p class="paynora-synthesis-context">When we grouped the research, three needs kept coming up: reduce anxiety around high-risk actions, make the next step easier to trust, and offer help without taking over. We weighed ideas by impact and effort: clearer hierarchy and spacing were practical first changes; Senior Mode and Practice Mode were bigger ideas to design and test. Fraud alerts and caregiver support were explored, but still need evaluation.</p>
+
+      <div class="paynora-persona">
+        <div class="paynora-persona__profile">
+          <p class="mono">Use-case persona</p>
+          <svg class="paynora-persona__portrait" viewBox="0 0 180 190" role="img" aria-label="Illustration representing an older adult who wants to manage payments independently" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 190v-91a72 72 0 0 1 144 0v91Z" fill="#E8EEFF"/>
+            <circle cx="90" cy="83" r="32" fill="#E7B995"/>
+            <path d="M58 78c1-25 15-41 33-41 21 0 34 15 34 43-9-5-16-13-20-24-11 13-27 21-47 22Z" fill="#727988"/>
+            <circle cx="79" cy="84" r="10" fill="none" stroke="#374151" stroke-width="2.5"/>
+            <circle cx="101" cy="84" r="10" fill="none" stroke="#374151" stroke-width="2.5"/>
+            <path d="M89 84h2M73 105c4 2 7 2 10 0M97 105c4 2 7 2 10 0" fill="none" stroke="#B77E63" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M45 190c4-37 21-58 45-58s41 21 45 58Z" fill="#4472E9"/>
+            <path d="M75 132c3 9 8 14 15 14s12-5 15-14" fill="none" stroke="#E7B995" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="143" cy="32" r="8" fill="#0F843E"/>
+          </svg>
+          <p class="paynora-persona__name">The independent shopkeeper</p>
+          <p class="paynora-persona__detail">A 65-year-old shop owner sending money to a supplier.</p>
+        </div>
+        <div class="paynora-persona__story">
+          <p class="mono">The situation</p>
+          <h3>Wants to send money without handing the task over.</h3>
+          <p>Across the use-case documents, the example is consistent: a senior shopkeeper wants to pay a supplier, but worries about making a mistake and has relied on other people for help.</p>
+        </div>
+        <div class="paynora-persona__need">
+          <p class="mono">What would help</p>
+          <p>Time to learn safely, clear steps during a real payment, and a trusted safety check for higher amounts.</p>
+        </div>
+      </div>
+
+      <div class="paynora-flow">
+        <div class="paynora-flow__heading">
+          <p class="mono">The journey we designed for</p>
+          <p>From first practice to independent payment</p>
+        </div>
+        <ol aria-label="Payment journey from Senior Mode to successful payment">
+          <li><span>01</span><strong>Senior Mode</strong><small>See a simpler interface</small></li>
+          <li><span>02</span><strong>Practice Mode</strong><small>Try with no real money</small></li>
+          <li><span>03</span><strong>Review payment</strong><small>Check who and how much</small></li>
+          <li><span>04</span><strong>Approval if needed</strong><small>For payments over a set limit</small></li>
+          <li><span>05</span><strong>Pay independently</strong><small>Complete with confidence</small></li>
+        </ol>
+      </div>
+
+      <div class="paynora-principles">
+        <p class="mono">PayNora’s three core features</p>
+        <ul>
+          <li><button class="paynora-feature-note" type="button" data-sticky-note aria-pressed="false"><span class="paynora-feature-note__content"><strong>Senior Mode</strong><span>Fewer, clearer choices help users find a starting point without scanning a crowded home screen.</span></span></button></li>
+          <li><button class="paynora-feature-note" type="button" data-sticky-note aria-pressed="false"><span class="paynora-feature-note__content"><strong>Practice Mode</strong><span>A no-money simulation lets users rehearse a payment before they make a real one.</span></span></button></li>
+          <li><button class="paynora-feature-note" type="button" data-sticky-note aria-pressed="false"><span class="paynora-feature-note__content"><strong>Caregiver control</strong><span>Trusted support for higher-risk payments, while routine payments remain independent. This direction still needs testing.</span></span></button></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="case-section case-section--tinted">
+  <section class="case-section paynora-section">
     <div class="case-section__heading">
-      <p class="eyebrow">02 · The approach</p>
-      <h2>Support the user before, during, and after a decision.</h2>
+      <p class="eyebrow">03 · Visual direction</p>
+      <h2>Use familiar cues to make the next step clear.</h2>
     </div>
     <div class="case-section__body">
-      <p>The experience is organized around reducing uncertainty rather than asking users to move faster. Each part of the flow has a specific job: make actions easier to follow, make important details easier to verify, or let people learn at their own pace.</p>
-      <div class="case-principles">
-        <article class="case-principle">
-          <span class="case-principle__number">01</span>
-          <h3>Guide, don't overwhelm</h3>
-          <p>Present a clear next action at each stage so users can focus on completing one part of a payment at a time.</p>
-        </article>
-        <article class="case-principle">
-          <span class="case-principle__number">02</span>
-          <h3>Make confirmation meaningful</h3>
-          <p>Give people a deliberate moment to review the payment and confirm it, with voice-assisted confirmation as another way to check their intent.</p>
-        </article>
-        <article class="case-principle">
-          <span class="case-principle__number">03</span>
-          <h3>Let confidence grow safely</h3>
-          <p>Offer a practice mode where users can become familiar with the experience before making a real transaction.</p>
-        </article>
+      <p>The visual system uses blue as its primary trust cue and reserves green, orange, and red for familiar status feedback. Inter, clear type sizes, and consistent spacing support legibility without making the interface feel clinical.</p>
+
+      <div class="paynora-system">
+        <div class="paynora-palette">
+          <p class="mono">PayNora colour system</p>
+          <ul aria-label="PayNora design system colour palette">
+            <li><span style="--swatch:#4472E9"></span><strong>Primary blue</strong><code>#4472E9</code></li>
+            <li><span style="--swatch:#111827"></span><strong>Neutral dark</strong><code>#111827</code></li>
+            <li><span style="--swatch:#0F843E"></span><strong>Success</strong><code>#0F843E</code></li>
+            <li><span style="--swatch:#D64545"></span><strong>Alert</strong><code>#D64545</code></li>
+            <li><span style="--swatch:#AF7419"></span><strong>Warning</strong><code>#AF7419</code></li>
+            <li><span style="--swatch:#F3F4F6"></span><strong>Light gray</strong><code>#F3F4F6</code></li>
+          </ul>
+        </div>
+        <div class="paynora-type">
+          <p class="mono">Type built for reading</p>
+          <p class="paynora-type__sample">Aa <span>Inter</span></p>
+          <p>16px body text · clear size tiers · readable labels</p>
+        </div>
       </div>
+
+      <div class="paynora-access">
+        <p class="mono">Accessibility shaped the interface</p>
+        <ul>
+          <li><strong>44px</strong><span>minimum touch targets</span></li>
+          <li><strong>8pt</strong><span>spacing system</span></li>
+          <li><strong>4.5:1</strong><span>documented contrast target</span></li>
+          <li><strong>Plain labels</strong><span>clear, descriptive actions</span></li>
+        </ul>
+      </div>
+
+      <div class="paynora-links">
+        <a class="paynora-text-link" href="https://www.figma.com/board/XGbj3h1HjS7xycSHDnjA8f/Mars?node-id=0-1&amp;t=h24ShCx1prnRynMw-1" target="_blank" rel="noopener">Explore the FigJam board <span aria-hidden="true">↗</span></a>
+      </div>
+      <details class="case-document">
+        <summary class="case-document__summary">
+          <span class="case-document__title">
+            <span class="mono">Project document</span>
+            <span class="case-document__name">PayNora visual design system</span>
+            <span class="case-document__hint">Colour, typography, components, and accessibility · open here</span>
+          </span>
+          <span class="case-document__toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-document__content">
+          <iframe
+            class="case-document__viewer"
+            src="assets/documents/paynora/Visual_Design_Justification.pdf#view=FitH"
+            title="Embedded PayNora visual design system document"
+            loading="lazy"
+          ></iframe>
+          <p class="case-document__fallback">If the document does not appear here, <a href="assets/documents/paynora/Visual_Design_Justification.pdf" target="_blank" rel="noopener">open the PayNora visual design PDF</a>.</p>
+        </div>
+      </details>
     </div>
   </section>
 
-  <section class="case-section">
+  <section class="case-section case-section--tinted paynora-section">
     <div class="case-section__heading">
-      <p class="eyebrow">03 · The experience</p>
-      <h2>A payment flow with room to pause.</h2>
+      <p class="eyebrow">04 · The experience</p>
+      <h2>Make safety visible at the moments that matter.</h2>
     </div>
     <div class="case-section__body">
-      <ol class="case-steps">
-        <li><span>01</span><div><h3>Find a familiar starting point</h3><p>Keep navigation focused so common actions are easier to locate without scanning through a crowded interface.</p></div></li>
-        <li><span>02</span><div><h3>Move through a guided task</h3><p>Break the payment into understandable steps and keep the current action visible.</p></div></li>
-        <li><span>03</span><div><h3>Review before committing</h3><p>Make confirmation a useful checkpoint, supported by a voice-assisted option, rather than a rushed final tap.</p></div></li>
-        <li><span>04</span><div><h3>Learn without financial risk</h3><p>Use practice mode to explore how the interaction works before trying it with a real payment.</p></div></li>
+      <ol class="paynora-experience">
+        <li><span>Home</span><p>Show familiar actions first, with language choice and Practice Mode easy to find.</p></li>
+        <li><span>Practice</span><p>Explain that the simulation uses no real money, then let users learn by doing.</p></li>
+        <li><span>Payment</span><p>Keep the recipient, amount, and next action easy to see and review.</p></li>
+        <li><span>Safety check</span><p>Use a trusted caregiver approval for payments above the chosen limit; keep routine payments independent.</p></li>
+        <li><span>Confirmation</span><p>Clearly confirm the result and help users understand what happened.</p></li>
       </ol>
+      <p class="paynora-experience__note">The concept also explores regional-language support, voice assistance, trusted contacts, and fraud alerts as additional ways to make the experience more accessible and reassuring.</p>
+
+      <div class="paynora-testing">
+        <p class="mono">Prototype testing, then iteration</p>
+        <p class="paynora-testing__intro">We tested the interactive prototype in moderated sessions with older adults. The results show where people succeeded and where the design still caused friction.</p>
+        <ul class="paynora-testing__metrics">
+          <li><button type="button" data-sticky-note aria-pressed="false"><strong>85.7%</strong><span>Easy Mode task success (the simpler mode shown here as Senior Mode)</span></button></li>
+          <li><button type="button" data-sticky-note aria-pressed="false"><strong>66.7%</strong><span>Practice Mode completion among first-time users</span></button></li>
+          <li><button type="button" data-sticky-note aria-pressed="false"><strong>61.9%</strong><span>Misclicks on the original, closely spaced controls</span></button></li>
+          <li><button type="button" data-sticky-note aria-pressed="false"><strong>33.3%</strong><span>Drop-off where the flow felt unfamiliar or risky</span></button></li>
+        </ul>
+        <p class="paynora-testing__caveat">These are moderated prototype results, not live product usage. We increased spacing after the misclick finding, but did not re-measure the misclick rate, so the improvement is not yet proven.</p>
+
+        <div class="paynora-iteration">
+          <p class="mono">One example: making Practice Mode easier to start</p>
+          <ol>
+            <li><strong>What we saw</strong><span>Practice instructions and safety content felt dense when presented together.</span></li>
+            <li><strong>What we changed</strong><span>We separated practice from safety guidance, simplified the cards, and made starting a session more obvious.</span></li>
+            <li><strong>What testing tells us</strong><span>The revised screen was tested; first-time completion was 66.7%. We do not have a before-and-after measure to show the change caused that result.</span></li>
+          </ol>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="case-section case-section--tinted">
+  <section class="case-section paynora-section">
     <div class="case-section__heading">
-      <p class="eyebrow">04 · Design direction</p>
-      <h2>Clarity is part of the product's trust.</h2>
+      <p class="eyebrow">05 · What’s next</p>
+      <h2>Designed as a concept. Ready for real-user validation.</h2>
     </div>
     <div class="case-section__body">
-      <p>The interface pairs a straightforward hierarchy with guided actions and clear confirmation points. The goal is not to hide complexity, but to explain the action in front of the user and make it easier to pause before it becomes final.</p>
-      <p>Voice assistance and practice are complementary: one supports a real decision, while the other helps someone gain familiarity outside a live transaction. Together, they make confidence an intentional part of the payment experience.</p>
-      <div class="case-outcome">
-        <p class="eyebrow">Intended impact</p>
-        <p>Help users feel more in control of everyday digital payments by making the flow easier to follow, check, and learn.</p>
+      <p>Prototype testing gave us an early signal, not proof of how PayNora would perform in everyday use. Next, we need to measure the spacing changes and learn whether the safety features feel supportive without taking away independence.</p>
+      <div class="paynora-next">
+        <p class="mono">What we would validate next</p>
+        <ul>
+          <li>Does the revised spacing reduce misclicks in a new test?</li>
+          <li>Can someone practise, then complete a payment independently?</li>
+          <li>Do caregiver alerts and voice or language support help without taking control away?</li>
+        </ul>
       </div>
+      <details class="case-document">
+        <summary class="case-document__summary">
+          <span class="case-document__title">
+            <span class="mono">Project document</span>
+            <span class="case-document__name">PayNora USP &amp; use case</span>
+            <span class="case-document__hint">One-page overview · open here</span>
+          </span>
+          <span class="case-document__toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="case-document__content">
+          <iframe
+            class="case-document__viewer"
+            src="assets/documents/paynora/USP_UseCase_Document.pdf#view=FitH"
+            title="Embedded PayNora USP and use-case document"
+            loading="lazy"
+          ></iframe>
+          <p class="case-document__fallback">If the document does not appear here, <a href="assets/documents/paynora/USP_UseCase_Document.pdf" target="_blank" rel="noopener">open the PayNora USP and use-case PDF</a>.</p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -113,5 +276,6 @@
     <a href="headroom.html">Next: Headroom <span aria-hidden="true">→</span></a>
   </nav>
 </main>
+<script src="scripts/case-study.js" defer></script>
 </body>
 </html>
