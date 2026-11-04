@@ -25,7 +25,7 @@
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a href="assets/documents/professional/resume.pdf" class="btn btn--ghost nav__resume" download>Resume</a>
+  <a href="assets/documents/professional/resume.pdf" class="btn btn--ghost nav__resume" download data-resume-download>Resume</a>
 </header>
 
 <main id="top">
@@ -56,11 +56,12 @@
       </p>
       <div class="hero__actions">
         <a href="#work" class="btn btn--primary">See the work</a>
-        <a href="assets/documents/professional/resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+        <a href="assets/documents/professional/resume.pdf" class="btn btn--ghost" download data-resume-download>Download Resume</a>
       </div>
       <ul class="hero__tags">
-        <li>UX Research</li><li>UI Design</li><li>Storytelling</li>
-        <li>Design Thinking</li><li>Wireframing</li><li>Prototyping</li>
+        <li>Product Design</li><li>UX Research</li><li>Interaction Design</li>
+        <li>Human–AI Interaction Design</li><li>Conversational UX</li>
+        <li>Prototyping</li><li>Design Systems</li><li>Accessibility</li>
       </ul>
     </div>
   </section>
@@ -178,15 +179,17 @@
       <div class="skills__group">
         <h3>Understand</h3>
         <ul class="chips">
-          <li>UX Research</li><li>User Interviews</li><li>Design Thinking</li>
-          <li>Problem Framing</li><li>User Research</li>
+          <li>User Interviews</li><li>Research Synthesis</li><li>Problem Framing</li>
+          <li>Design Thinking</li><li>Usability Testing</li>
         </ul>
       </div>
       <div class="skills__group">
         <h3>Shape</h3>
         <ul class="chips">
-          <li>Information Architecture</li><li>Wireframing</li><li>User Flows</li>
-          <li>Prototyping</li><li>Visual Design</li><li>Branding</li>
+          <li>Interaction Design</li><li>Human–AI Interaction Design</li>
+          <li>Conversational UX</li><li>Information Architecture</li><li>User Flows</li>
+          <li>Wireframing</li><li>Prototyping</li><li>Design Systems</li>
+          <li>Accessibility</li><li>Visual Design</li>
         </ul>
       </div>
       <div class="skills__group">
@@ -306,7 +309,7 @@
         </a>
       </div>
       <div class="footer__actions">
-        <a href="assets/documents/professional/resume.pdf" class="btn btn--primary footer__resume" download>Download Resume</a>
+        <a href="assets/documents/professional/resume.pdf" class="btn btn--primary footer__resume" download data-resume-download>Download Resume</a>
       </div>
     </div>
     <p class="footer__note">© 2026 Naga Malleswari Chennamsetti <span aria-hidden="true">·</span> made with curiosity</p>
@@ -319,6 +322,14 @@
   const updateBackToTop = () => {
     backToTop.classList.toggle('is-visible', window.scrollY > 500);
   };
+
+  document.querySelectorAll('[data-resume-download]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (!window.confirm('Would you like to download my resume?')) {
+        event.preventDefault();
+      }
+    });
+  });
 
   window.addEventListener('scroll', updateBackToTop, { passive: true });
   updateBackToTop();
