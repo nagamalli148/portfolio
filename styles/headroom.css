@@ -468,7 +468,7 @@
 .headroom-journey li::before {
   width: 0.55rem;
   height: 0.55rem;
-  border: 1px solid var(--synthesis-highlight);
+  border: 1px solid #FF8870;
   border-radius: 50%;
   background: #F7F3F9;
   content: "";
@@ -724,6 +724,83 @@
   margin: 0;
   padding: 0.75rem 1rem;
   background: #FFFFFF;
+}
+
+.headroom-reset-showcase {
+  margin: 2rem 0;
+}
+
+.headroom-reset-showcase__heading {
+  margin-bottom: 1rem;
+}
+
+.headroom-reset-showcase__heading .mono {
+  margin: 0 0 0.45rem;
+  color: #5B4772;
+  font-size: 0.68rem;
+}
+
+.headroom-reset-showcase__heading h3 {
+  max-width: 32ch;
+  margin: 0;
+  color: var(--case-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.3;
+}
+
+.headroom-reset-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.headroom-reset-showcase__grid figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #DED6E8;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.headroom-reset-showcase__grid img {
+  display: block;
+  width: min(100%, 210px);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(33, 22, 49, 0.12);
+}
+
+.headroom-reset-showcase__grid figcaption {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.65rem;
+  width: min(100%, 340px);
+  align-items: baseline;
+}
+
+.headroom-reset-showcase__grid figcaption > span {
+  color: #756B80;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+.headroom-reset-showcase__grid figcaption strong {
+  color: var(--case-ink);
+  font-size: 0.9rem;
+}
+
+.headroom-reset-showcase__grid figcaption p {
+  grid-column: 2;
+  margin: 0;
+  color: #756B80;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .headroom-prototype-links {
@@ -1006,6 +1083,14 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .headroom-reset-showcase__grid {
+    gap: 0.75rem;
+  }
+
+  .headroom-reset-showcase__grid figure {
+    padding: 1rem 0.75rem;
+  }
+
   .headroom-board-cta {
     margin-right: 1rem;
     margin-left: 1rem;
@@ -1120,6 +1205,10 @@
   }
 
   .headroom-brand-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .headroom-reset-showcase__grid {
     grid-template-columns: 1fr;
   }
 
