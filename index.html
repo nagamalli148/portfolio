@@ -8,6 +8,7 @@
 
 <!-- Fonts: Fraunces for headings (warm, characterful serif), Inter for body, IBM Plex Mono for labels/data -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles/style.css">
@@ -33,7 +34,10 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero__portrait-wrap">
-      <img class="hero__portrait" src="assets/images/profile/myphoto.jpg" alt="Naga Malleswari smiling at a community event">
+      <picture>
+        <source srcset="assets/images/profile/myphoto.webp" type="image/webp">
+        <img class="hero__portrait" src="assets/images/profile/myphoto.jpg" alt="Naga Malleswari smiling at a community event" fetchpriority="high">
+      </picture>
       <span class="hero__portrait-note">curious by nature</span>
       <div class="butterfly-flight" aria-hidden="true">
         <svg class="mini-butterfly" viewBox="0 0 64 58" role="presentation">
@@ -80,7 +84,10 @@
 
       <article class="project">
         <div class="project__visual project__visual--paynora">
-          <img class="project__image" src="assets/images/paynora/paynora.png" alt="PayNora payments app interface displayed on a smartphone" loading="lazy" decoding="async">
+          <picture>
+            <source srcset="assets/images/paynora/paynora.webp" type="image/webp">
+            <img class="project__image" src="assets/images/paynora/paynora.png" alt="PayNora payments app interface displayed on a smartphone" loading="lazy" decoding="async" fetchpriority="low">
+          </picture>
         </div>
         <div class="project__body">
           <p class="mono">Fintech · UX Research + Product Design</p>
@@ -102,7 +109,10 @@
 
       <article class="project project--reverse">
         <div class="project__visual project__visual--headroom">
-          <img class="project__image" src="assets/images/headroom/headroom.png" alt="Headroom study companion app interface displayed on smartphones" loading="lazy" decoding="async">
+          <picture>
+            <source srcset="assets/images/headroom/headroom.webp" type="image/webp">
+            <img class="project__image" src="assets/images/headroom/headroom.png" alt="Headroom study companion app interface displayed on smartphones" loading="lazy" decoding="async" fetchpriority="low">
+          </picture>
         </div>
         <div class="project__body">
           <p class="mono">EdTech · UX Research + Visual Design</p>
@@ -141,11 +151,17 @@
       </div>
       <div class="about__visual about__visual--collage" aria-label="A glimpse into Malli's design process">
         <figure class="about__tile about__tile--sketch">
-          <img src="assets/images/portfolio/paper_sketch.png" alt="Hand-drawn interface sketches on paper" loading="lazy" decoding="async">
+          <picture>
+            <source srcset="assets/images/portfolio/paper_sketch.webp" type="image/webp">
+            <img src="assets/images/portfolio/paper_sketch.png" alt="Hand-drawn interface sketches on paper" loading="lazy" decoding="async" fetchpriority="low">
+          </picture>
           <figcaption>start with a sketch</figcaption>
         </figure>
         <figure class="about__tile about__tile--laptop">
-          <img src="assets/images/portfolio/imagelaptop.png" alt="Design work being created on a laptop" loading="lazy" decoding="async">
+          <picture>
+            <source srcset="assets/images/portfolio/imagelaptop.webp" type="image/webp">
+            <img src="assets/images/portfolio/imagelaptop.png" alt="Design work being created on a laptop" loading="lazy" decoding="async" fetchpriority="low">
+          </picture>
           <figcaption>design, in context</figcaption>
         </figure>
         <figure class="about__tile about__tile--people">
@@ -180,23 +196,22 @@
         <h3>Understand</h3>
         <ul class="chips">
           <li>User Interviews</li><li>Research Synthesis</li><li>Problem Framing</li>
-          <li>Design Thinking</li><li>Usability Testing</li>
+          <li>Design Thinking</li><li>Usability Testing</li><li>Competitive Research</li>
         </ul>
       </div>
       <div class="skills__group">
         <h3>Shape</h3>
         <ul class="chips">
-          <li>Interaction Design</li><li>Human–AI Interaction Design</li>
-          <li>Conversational UX</li><li>Information Architecture</li><li>User Flows</li>
-          <li>Wireframing</li><li>Prototyping</li><li>Design Systems</li>
-          <li>Accessibility</li><li>Visual Design</li>
+          <li>Interface Design</li><li>Human–AI Interaction Design</li>
+          <li>Conversational UX</li><li>Information Architecture</li>
+          <li>Prototyping</li><li>Design Systems</li>
         </ul>
       </div>
       <div class="skills__group">
         <h3>Make</h3>
         <ul class="chips">
-          <li>Figma</li><li>Miro</li><li>Inkscape</li><li>Canva</li>
-          <li>Excalidraw</li><li>Jira</li>
+          <li>Figma</li><li>FigJam</li><li>Claude</li>
+          <li>Relume</li><li>Lovable</li><li>Jira</li>
         </ul>
       </div>
     </div>

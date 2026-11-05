@@ -12,5 +12,6 @@ Static portfolio site. The HTML pages remain at the repository root as the site 
 - `assets/images/headroom/` — Headroom project imagery and research boards
 - `assets/images/paynora/` — PayNora project imagery and research boards
 - `assets/documents/professional/` — resume
-- `assets/documents/headroom/` — Headroom project documents
-- `assets/documents/paynora/` — PayNora project documents
+- `assets/documents/headroom/` — Headroom project documents and optimized web viewer copy
+- `assets/documents/paynora/` — PayNora project documents and optimized web viewer copies
+- `*.webp` image files — optimized browser images; original formats remain as fallbacks

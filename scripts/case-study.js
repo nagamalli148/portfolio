@@ -6,3 +6,15 @@ document.addEventListener("click", (event) => {
   note.setAttribute("aria-pressed", String(selected));
   note.closest("li, article")?.classList.toggle("is-selected", selected);
 });
+
+document.querySelectorAll(".case-document").forEach((documentSection) => {
+  documentSection.addEventListener("toggle", () => {
+    if (!documentSection.open) return;
+
+    const viewer = documentSection.querySelector(".case-document__viewer[data-src]");
+    if (!viewer) return;
+
+    viewer.src = viewer.dataset.src;
+    viewer.removeAttribute("data-src");
+  });
+});

@@ -6,6 +6,7 @@
 <title>Headroom Case Study - Malli</title>
 <meta name="description" content="How research, a study-first concept, and the Glass Sanctuary design system shaped Headroom, a support layer for competitive-exam students.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/case-study.css">
@@ -27,8 +28,11 @@
       <a class="btn btn--primary" href="#research">Explore the case study <span aria-hidden="true">↓</span></a>
     </div>
     <figure class="case-hero__image case-hero__image--headroom headroom-hero__image">
-      <img src="assets/images/headroom/headroom.png" alt="Headroom study companion app shown on two smartphones" fetchpriority="high">
-      <figcaption>Study planning with support close at hand.</figcaption>
+        <picture>
+          <source srcset="assets/images/headroom/headroom.webp" type="image/webp">
+          <img src="assets/images/headroom/headroom.png" alt="Headroom study companion app shown on two smartphones" fetchpriority="high">
+        </picture>
+        <figcaption>Study planning with support close at hand.</figcaption>
     </figure>
   </section>
 
@@ -47,7 +51,10 @@
     <div class="case-section__body">
       <p>We spoke with students and parents, reviewed existing research, and looked at study and wellbeing tools. It brought our focus to younger exam aspirants—and to the pressure that can build when they feel alone or fall behind.</p>
       <figure class="headroom-research-board">
-        <img src="assets/images/headroom/research_headroom.jpeg" alt="Headroom research board showing primary research synthesis and a competitive research matrix" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="assets/images/headroom/research_headroom.webp" type="image/webp">
+          <img src="assets/images/headroom/research_headroom.jpeg" alt="Headroom research board showing primary research synthesis and a competitive research matrix" loading="lazy" decoding="async" fetchpriority="low">
+        </picture>
         <figcaption>
           <span>Our primary and secondary research, brought together</span>
           <span class="headroom-image-hint">Hover to inspect</span>
@@ -179,11 +186,10 @@
         <div class="case-document__content">
           <iframe
             class="case-document__viewer"
-            src="assets/documents/headroom/Visual_Design_Justification.pdf#view=FitH"
+            data-src="assets/documents/headroom/Visual_Design_Justification_optimized.pdf#view=FitH"
             title="Embedded Headroom visual design direction document"
-            loading="lazy"
           ></iframe>
-          <p class="case-document__fallback">If the document does not appear here, <a href="assets/documents/headroom/Visual_Design_Justification.pdf" target="_blank" rel="noopener">open the Headroom visual design PDF</a>.</p>
+          <p class="case-document__fallback">If the document does not appear here, <a href="assets/documents/headroom/Visual_Design_Justification_optimized.pdf" target="_blank" rel="noopener">open the Headroom visual design PDF</a>.</p>
         </div>
       </details>
     </div>
